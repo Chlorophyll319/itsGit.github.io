@@ -25,8 +25,8 @@
 
         <!-- Logo -->
         <RouterLink to="/" class="btn btn-ghost text-xl">
-          <FontAwesomeIcon :icon="['fab', 'git-alt']" class="h-6 w-6 text-primary" />
-          <span class="ml-2">itsGit</span>
+          <img src="@/assets/git.png" alt="Git Logo" class="h-6 w-6" />
+          <span class="ml-2">Yes, It's Git</span>
         </RouterLink>
       </div>
 
@@ -72,8 +72,10 @@
     <!-- Footer -->
     <footer class="footer footer-center bg-base-200 text-base-content p-10">
       <aside>
-        <FontAwesomeIcon :icon="['fab', 'git-alt']" class="h-12 w-12 text-primary" />
-        <p class="font-bold text-lg">itsGit - Git 指令輔助工具</p>
+        <div class="flex items-center gap-3">
+          <img src="@/assets/git.png" alt="Git Logo" class="h-12 w-12" />
+          <p class="font-bold text-lg">Yes, It's Git - Git 指令輔助工具</p>
+        </div>
         <p class="text-sm">讓 Git 操作更簡單、更直觀</p>
         <p class="text-xs opacity-70">© 2025 itsGit. All rights reserved.</p>
       </aside>
