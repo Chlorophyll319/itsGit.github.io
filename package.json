@@ -36,8 +36,14 @@
     "globals": "^16.4.0",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
+    "unplugin-auto-import": "^20.2.0",
+    "unplugin-fonts": "^1.4.0",
+    "unplugin-vue-components": "^29.1.0",
+    "unplugin-vue-router": "^0.15.0",
     "vite": "^7.1.7",
-    "vite-plugin-inspect": "^11.3.3"
+    "vite-plugin-inspect": "^11.3.3",
+    "vite-plugin-pages": "^0.33.1",
+    "vite-plugin-vue-layouts-next": "^1.0.0"
   },
   "description": "一個簡化 Git 操作流程的網頁工具，透過表單輸入自動產生對應的 Git 指令。",
   "main": "vite.config.js",

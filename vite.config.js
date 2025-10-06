@@ -12,11 +12,14 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
-    VueRouter(),
-    Layouts(),
-    Vue(),
     tailwindcss(),
-    Components(),
+    VueRouter({
+      dts: './types/typed-router.d.ts',
+    }),
+    Vue(),
+    Layouts({
+      defaultLayout: 'default',
+    }),
     AutoImport({
       imports: [
         'vue',
@@ -25,10 +28,17 @@ export default defineConfig({
           pinia: ['defineStore', 'storeToRefs'],
         },
       ],
+      dts: 'src/auto-imports.d.ts',
+      dirs: ['src/stores'],
       eslintrc: {
         enabled: true,
       },
       vueTemplate: true,
+    }),
+    Components({
+      extensions: ['.vue'],
+      include: [/\.vue$/, /\.vue\?vue/],
+      dts: 'src/components.d.ts',
     }),
   ],
   optimizeDeps: {
