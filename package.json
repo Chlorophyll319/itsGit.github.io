@@ -1,0 +1,45 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@vueuse/core": "^13.9.0",
+    "daisyui": "^5.1.27",
+    "tailwindcss": "^4.1.14",
+    "vue": "^3.5.22",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-vue": "^10.5.0",
+    "globals": "^16.4.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.7",
+    "vite-plugin-inspect": "^11.3.3"
+  },
+  "description": "一個簡化 Git 操作流程的網頁工具，透過表單輸入自動產生對應的 Git 指令。",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chlorophyll319/itsGit.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chlorophyll319/itsGit.github.io/issues"
+  },
+  "homepage": "https://github.com/Chlorophyll319/itsGit.github.io#readme"
+}
